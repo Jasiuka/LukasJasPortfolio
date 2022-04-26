@@ -1,0 +1,189 @@
+@media (max-width: 94em) {
+  .socials {
+    left: 0;
+  }
+}
+
+@media (max-width: 88em) {
+  .socials {
+    display: none;
+  }
+
+  .footer-socials {
+    display: flex;
+  }
+}
+
+@media (max-width: 72em) {
+  html {
+    font-size: 50%;
+  }
+
+  .project {
+    gap: 3.2rem;
+    margin-left: 1.2rem;
+  }
+}
+
+@media (max-width: 62em) {
+  html {
+    font-size: 45%;
+  }
+  .project {
+    gap: 1.2rem;
+    margin-left: 3.2rem;
+  }
+
+  .inner-about-text-box {
+    padding: 5.6rem 4.8rem;
+  }
+
+  .about-welcome {
+    transform: none;
+  }
+
+  .work-section {
+    column-gap: 3.2rem;
+  }
+}
+
+@media (max-width: 51em) {
+  body {
+    position: relative;
+  }
+
+  .text-under {
+    font-size: 3.5rem;
+  }
+
+  .heading-mobile {
+    display: block;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+
+  .skills-section .heading-mobile,
+  .contact-section .heading-mobile {
+    align-self: flex-start;
+  }
+
+  .skill-box {
+    padding: 3.2rem 1.8rem;
+  }
+
+  .skill-box .heading-secondary {
+    font-size: 2.6;
+  }
+
+  .contact-box,
+  .from {
+    padding: 1.4rem;
+  }
+
+  .nav-inner,
+  .nav-outside {
+    display: none;
+  }
+
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  .open-menu .mobile-menu-nav {
+    visibility: visible;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .open-menu .mobile-icon[name="menu-outline"] {
+    display: none;
+  }
+  .open-menu .mobile-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .heading-box--mobile {
+    display: flex;
+  }
+
+  .contact-section .heading-box--mobile {
+    margin-bottom: 1.2rem;
+  }
+
+  .about-section {
+    display: block;
+  }
+}
+
+@media (max-width: 34em) {
+  .skills-box {
+    flex-direction: column;
+  }
+
+  .skill-box {
+    height: 47rem;
+  }
+
+  .work-section {
+    grid-template-columns: 1fr;
+  }
+
+  .project {
+    flex-direction: column;
+    gap: 2.2rem;
+  }
+
+  .project-box--1 {
+    flex-direction: column-reverse;
+    margin-bottom: 4.8rem;
+  }
+  .project-box--2 {
+    margin-bottom: 4.8rem;
+  }
+
+  .project-box--3 {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 25em) {
+  .container-footer {
+    gap: 4.2rem;
+  }
+
+  .form {
+    padding: 1.4rem;
+  }
+
+  .form-item input,
+  .input-message {
+    font-size: 1.6rem;
+  }
+
+  .input-message {
+    max-width: 25rem;
+  }
+  .contact-box h3 {
+    font-size: 3.2rem;
+  }
+}
+
+@media (max-width: 21em) {
+  .container-footer {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .footer-list {
+    flex-direction: row;
+  }
+}
