@@ -23,6 +23,10 @@ const project1 = document.querySelector(".project-box--1");
 const project2 = document.querySelector(".project-box--2");
 const project3 = document.querySelector(".project-box--3");
 
+// Inputs
+const nameInput = document.querySelector(".name");
+const emailInput = document.querySelector(".email");
+
 // functions
 
 // Nav slides
@@ -85,6 +89,11 @@ const projectSlide1 = function (entries) {
   const e = entries[0];
   if (!e.isIntersecting) project1.classList.remove("slide-to-right");
   else project1.classList.add("slide-to-right");
+  if (window.screen.width > 1536) {
+    project1.classList.remove("slide-to-right");
+    project1.style.display = "none";
+    project1.style.display = "flex";
+  }
 };
 
 // ------------------------------------------------
@@ -93,6 +102,11 @@ const projectSlide2 = function (entries) {
   const e = entries[0];
   if (!e.isIntersecting) project2.classList.remove("slide-to-left");
   else project2.classList.add("slide-to-left");
+  if (window.screen.width > 1536) {
+    project2.classList.remove("slide-to-left");
+    project2.style.display = "none";
+    project2.style.display = "flex";
+  }
 };
 
 // -------------------------------------------------
@@ -101,6 +115,11 @@ const projectSlide3 = function (entries) {
   const e = entries[0];
   if (!e.isIntersecting) project3.classList.remove("slide-to-right");
   else project3.classList.add("slide-to-right");
+  if (window.screen.width > 1536) {
+    project3.classList.remove("slide-to-right");
+    project3.style.display = "none";
+    project3.style.display = "flex";
+  }
 };
 
 /// Nav slides
@@ -209,3 +228,12 @@ header.addEventListener("click", function (e) {
     header.classList.remove("open-menu");
   } else return;
 });
+
+console.log(window.screen.width);
+console.log(window.screen.height);
+
+// Invalid input messages
+
+// nameInput.addEventListener("invalid", function () {
+//   if (nameInput === "") nameInput.setCustomValidity("Hello world");
+// });
